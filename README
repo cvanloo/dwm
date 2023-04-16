@@ -2,6 +2,16 @@ dwm - dynamic window manager
 ============================
 dwm is an extremely fast, small, and dynamic window manager for X.
 
+Custom Config
+-------------
+This is my custom dwm config.
+The original can be found here: https://dwm.suckless.org/
+
+
+License
+-------
+https://git.suckless.org/dwm/file/LICENSE.html
+
 
 Requirements
 ------------
