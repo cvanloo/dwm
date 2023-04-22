@@ -68,6 +68,7 @@ static const char *termcmd[]  = { "kitty", NULL };
 static const char *i3lock[]   = { "i3lock", "-c", "000000", "-e", "-f", NULL };
 /*static const char *lydv[]    = { "setxkbmap", "dvorak", NULL };
 static const char *lydvp[]   = { "setxkbmap", "-layout", "us", "-variant", "dvp", NULL };*/
+static const char *keyboard_switcher[] = { "__keyboard-switcher" };
 //static const char *key_toggle[] = { "_keys", NULL };
 
 static Key keys[] = {
@@ -75,8 +76,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
     { MODKEY,                       XK_Escape, spawn,          {.v = i3lock } },
-    /*{ MODKEY,                       XK_o,      spawn,          {.v = lydv } },
-    { MODKEY,                       XK_e,      spawn,          {.v = lydvp } },*/
+    { MODKEY,                       XK_o,      spawn,          {.v = keyboard_switcher } },
+    /*{ MODKEY,                       XK_e,      spawn,          {.v = lydvp } },*/
     /*{ MODKEY,                       XK_e,      spawn,          {.v = key_toggle } },*/
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
